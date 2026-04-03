@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form Version 2</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Orange Gradient Background */
+  background: linear-gradient(135deg, #ff7a18, #ffb347);
+}
+
+/* Card */
+.card {
+  width: 450px;
+  padding: 30px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff7a18;
+}
+
+/* Row */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+/* Inputs */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #ff7a18;
+  box-shadow: 0 0 5px rgba(255, 122, 24, 0.4);
+}
+
+/* Button */
+.submit {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, #ff7a18, #ff4d00);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  background: linear-gradient(135deg, #ff4d00, #cc3a00);
+  transform: translateY(-2px);
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <h2>Sign Up</h2>
+
+    <form>
+
+        <div class="row">
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+        </div>
+
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+
+        <div class="row">
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+        </div>
+
+        <select required>
+            <option value="">Select Country</option>
+            <option>India</option>
+            <option>USA</option>
+            <option>UK</option>
+        </select>
+
+        <textarea placeholder="Address" rows="3"></textarea>
+
+        <button class="submit">Create Account</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
